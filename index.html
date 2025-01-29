@@ -28,38 +28,70 @@
 <body>
     <header>
         <!-- Banner Section -->
-        <div class="banner pl-56 pr-20 flex gap-3">
-            <div class="banner-content flex flex-col gap-8 items-start w-1/2">
-                <h1  class="text-7xl font-extrabold">It's good <br>
+        <div class="lg:pl-56 lg:pr-20 md:flex flex-row-reverse gap-3">
+            <div class="banner-image relative mx-auto">
+                <!-- image -->
+                <img class="" src="images/banner.png" alt="">
+                 <!-- Card -->
+                  <div class=" absolute flex items-center gap-3 bg-white shadow-black shadow-sm rounded-lg px-6 py-7 bottom-0 left-28 md:top-80 md:left-32 lg:top-96 lg:left-28">
+                    <!-- icon -->
+                     <div class=""><i class="fa-solid fa-star text-[#FFC850] text-2xl lg:text-4xl"></i></div>
+                     <!-- text -->
+                      <div>
+                        <h2 class="font-extrabold lg:text-3xl ">5.00</h2>
+                        <p class="text-gray-500 text-lg font-semibold">Trust Pilot Rating's</p>
+                      </div>
+                  </div>
+            </div>
+
+            <!-- Banner Text Content -->
+            <div class=" w-1/2 mx-auto text-center  md:text-start grid gap-4 md:gap-5 lg:gap-7">
+                <h1  class="text-5xl md:text-6xl lg:text-7xl font-extrabold">It's good <br>
                     tea time at The <br>Tea House</h1>
-                    <p class="text-lg font-[500]">
+                    <p class="text-center md:text-start text-lg font-[500]">
                         Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
                     </p>
-                    <button class="explore-button px-5 py-4 rounded-xl bg-gradient-to-l from-[#FF0000] to-[#FF8938] text-white ">Explore More</button>
-            </div>
-            <div class="banner-image">
-                <img class="" src="images/banner.png" alt="">
+                    <!-- explore-button -->
+                    <div class="flex justify-center md:justify-start">
+                        <button class=" flex items-center gap-2 px-5 py-4 rounded-xl bg-gradient-to-l from-[#FF0000] to-[#FF8938] text-white">Explore More<img src="images/arrow.png" alt=""></button>
+                    </div>
             </div>
         </div>
     </header>
-    <main class="py-56 px-32">
-        <div class="flex flex-col items-center gap-5 ">
-            <h2 class="text-5xl font-extrabold">Our Featured Products</h2>
-            <p class="text-sm text-center px-80">
+    <main class="mx-auto mt-12 md:mt-18 lg:mt-24 px-10">
+        <!-- Featured Products Titel -->
+        <div class="text-center mx-auto mb-6 lg:mb-12">
+            <h2 class="mb-3 text-3xl md:text-4xl lg:text-5xl font-extrabold">Our Featured Products</h2>
+            <p class="text-sm max-w-2xl mx-auto">
                 There are many variations of passages of Lorem Ipsum available, 
                 but the majority have suffered alteration in some form, by injected 
                 humour, or randomised words which don't look even slightly believable. 
             </p>
         </div>
-        <div class="tea-card-container flex gap-6 ">
-            <div class="tea-card">
+        <!-- Product Cards Container -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-y-8 md:gap-6 mb-12 md:mb-24 lg:mb-32">
+            <div class="flex flex-col items-center gap-2 p-5 mx-auto max-w-xs text-center overflow-hidden bg-gray-50 shadow-sm rounded-lg">
                 <img src="images/tea-1.png" alt="" class="tea-image">
-                <h3 class="tea-name">Milk Tea</h3>
-                <p class="tea-description">Creamer could be replaced by fresh milk</p>
+                <h3 class="text-2xl font-bold">Milk Tea</h3>
+                <p class="text-sm text-[#777777]">Creamer could be replaced by fresh milk</p>
             </div>
-            
+            <div class="flex flex-col items-center gap-2 p-5 mx-auto max-w-xs text-center overflow-hidden bg-gray-50 shadow-sm rounded-lg">
+                <img src="images/tea-2.png" alt="" class="tea-image">
+                <h3 class="text-2xl font-bold">Black Tea</h3>
+                <p class="text-sm text-[#777777]">Creamer could be replaced by fresh milk</p>
+            </div>
+            <div class="flex flex-col items-center gap-2 p-5 mx-auto max-w-xs text-center overflow-hidden bg-gray-50 shadow-sm rounded-lg">
+                <img src="images/tea-3.png" alt="" class="tea-image">
+                <h3 class="text-2xl font-bold">Lemon Tea</h3>
+                <p class="text-sm text-[#777777]">Creamer could be replaced by fresh milk</p>
+            </div>
+            <div class="flex flex-col items-center gap-2 p-5 mx-auto max-w-xs text-center overflow-hidden bg-gray-50 shadow-sm rounded-lg">
+                <img src="images/tea-4.png" alt="" class="tea-image">
+                <h3 class="text-2xl font-bold">Green Tea</h3>
+                <p class="text-sm text-[#777777]">Creamer could be replaced by fresh milk</p>
+            </div>           
         </div>
-        <div class=" flex gap-12">
+        <div class=" md:flex gap-12">
             <div class="images grid grid-cols-2 gap-7">
                 <div class="rounded-xl h-32  bg-gradient-to-r from-[#FF0000FF] to-[#E6A6231A]"></div>
                 <div class="rounded-xl px-8 py-10 bg-[#E6A6231A]">
